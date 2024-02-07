@@ -10,7 +10,7 @@ app = Client("babe",api_id=API_ID,api_hash=API_HASH)
 ASKING = int(input("How many dps you wanna delete?\n"))
 
 
-async def sux(client, message):
+async def sux():
   try:
     photos = [p async for p in app.get_chat_photos("me")]
     print("Deleting All Photos...")
